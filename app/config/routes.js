@@ -1,14 +1,14 @@
 import React from 'react'
-import { Router, Route, hashHistory } from 'react-router'
+import { Route, IndexRoute } from 'react-router'
 
 import Main from '../containers/main'
+import Foo from '../containers/foo'
 
 const routes = (
-    <Router history={hashHistory}>
-        <Route path="/" component={Main}>
-
-        </Route>
-    </Router>
+    <Route path="/">
+        <IndexRoute component={Main} />
+        <Route path="foo" component={Foo} />
+    </Route>
 )
 
 export default routes
