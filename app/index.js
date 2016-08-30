@@ -5,12 +5,12 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import { syncHistoryWithStore } from 'react-router-redux'
 
-import weatherReducer from './reducers/index.js'
+import weatherReducer from './reducers'
 import routes from './config/routes'
 
 const store = createStore(
-                    weatherReducer,
-                    window.devToolsExtension && window.devToolsExtension()
+                weatherReducer,
+                window.devToolsExtension && window.devToolsExtension()
               )
 const history = syncHistoryWithStore(hashHistory, store)
 
