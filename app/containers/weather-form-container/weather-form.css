@@ -1,0 +1,24 @@
+.weather-form {
+    clear: both;
+    width: 300px;
+}
+
+.weather {
+    float: left;
+    width: 75%;
+    border-radius: 0;
+}
+
+.submit-btn {
+    float: right;
+    font-weight: 100;
+    width: 20%;
+    color: #fff;
+    text-transform: uppercase;
+    background: #cc0c22;
+    border-radius: 0;
+}
+
+.submit-btn:hover {
+    color: #fff;
+}
