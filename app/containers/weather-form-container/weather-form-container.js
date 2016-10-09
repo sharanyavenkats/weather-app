@@ -6,7 +6,7 @@ import styles from './weather-form.css'
 
 class WeatherFormContainer extends React.Component {
     submit() {
-        console.log('Submit the form.. using actions and saga ??')
+        // no-op
     }
 
     render() {

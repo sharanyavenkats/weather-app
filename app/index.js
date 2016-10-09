@@ -20,5 +20,5 @@ ReactDOM.render(
             {routes}
         </Router>
     </Provider>,
-    document.getElementById('app')
+    window.document.getElementById('app')
 )

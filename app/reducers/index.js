@@ -3,7 +3,7 @@ import { reducer as formReducer } from 'redux-form'
 import { combineReducers } from 'redux'
 
 const defaultState = {}
-function weather(state=defaultState, action) {
+function weather(state=defaultState) {
     return state
 }
 

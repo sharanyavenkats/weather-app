@@ -17,13 +17,16 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+      { test: /\.js$/, loaders: ['babel-loader', 'eslint-loader'], exclude: /node_modules/ },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')
       },
       { test: /\.(png|jpg|svg)$/, loader: 'file-loader?name=images/[name].[ext]' }
     ]
+  },
+  eslint: {
+    configFile: './.eslintrc'
   },
   plugins: [
     HTMLWebpackPluginConfig,
